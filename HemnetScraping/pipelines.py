@@ -8,5 +8,5 @@
 
 class HemnetscrapingPipeline(object):
     def process_item(self, item, spider):
-        print(item['address'])
+        item.save()
         return item
